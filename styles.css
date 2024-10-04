@@ -1,12 +1,15 @@
 body {
     background-color: #f7f7f7;
     font-family: 'Arial', sans-serif;
+    height: 100%;
+    margin: 0;
 }
 
 .gradient-background {
     background: linear-gradient(300deg, #FFD700, #FF69B4, #FF8C00, #8A2BE2, #00FFFF);
     background-size: 180% 180%;
     animation: gradient-animation 18s ease infinite;
+    min-height: 100vh;
 }
 
 @keyframes gradient-animation {
@@ -24,14 +27,15 @@ body {
 }
 
 .container {
-    margin-top: 100px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .container1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 #confetti-canvas {
